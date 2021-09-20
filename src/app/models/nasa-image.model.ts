@@ -3,5 +3,6 @@ export interface NASAImage {
   title: string,
   explanation: string,
   url: string,
-  date: string
+  date: string,
+  media_type: string,
 }

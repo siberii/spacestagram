@@ -1,3 +1,16 @@
-<div *ngFor="let image of images | async">
-    <app-image-item [image]="image"></app-image-item>
+<div class="column">
+    <ng-container *ngIf="images | async as obs; else loading">
+        <ng-container *ngFor="let image of obs">
+            <app-image-item class="row" *ngIf="image.media_type === 'image'" [image]="image"></app-image-item>
+        </ng-container>
+    </ng-container>
+    <ng-template #loading>
+        <mat-spinner></mat-spinner>
+    </ng-template>
+
+
+
+
+
+
 </div>

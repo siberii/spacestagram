@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  app-image-list,
+  app-stored-liked-images {
+    width: 50%;
+  }
+}

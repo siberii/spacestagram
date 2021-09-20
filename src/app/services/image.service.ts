@@ -29,7 +29,8 @@ export class ImageService {
             title: image.title,
             explanation: image.explanation,
             url: image.url,
-            date: image.date
+            date: image.date,
+            media_type: image.media_type,
           };
           return nasaImage
         }))

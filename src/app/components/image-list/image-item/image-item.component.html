@@ -1,8 +1,23 @@
-<p>{{image | json}}</p>
-<input 
-    #isLikedCheckbox
-    type="checkbox"
-    [checked]="isLiked"
-    (change)="like(isLikedCheckbox.checked)"
- >
-<hr />
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title>{{image.title}}</mat-card-title>
+        <mat-card-subtitle>{{image.date}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="image.url" alt="image.title">
+    <mat-card-content>
+        <p>
+            {{image.explanation}}
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button *ngIf="isLiked" mat-icon-button color="warn" aria-label="Like button" (click)="like()">
+            <mat-icon>favorite</mat-icon>
+        </button>
+        <button *ngIf="!isLiked" mat-icon-button aria-label="Like button" (click)="like()">
+            <mat-icon>favorite_border</mat-icon>
+        </button>
+        <button mat-button [cdkCopyToClipboard]="image.url" (click)="alertLinkCopied()">
+            <mat-icon>link</mat-icon>
+        </button>
+    </mat-card-actions>
+</mat-card>

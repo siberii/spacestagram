@@ -1,0 +1,20 @@
+<h1>Likes</h1>
+<h4>Likes are saved between sessions</h4>
+<mat-accordion>
+    <ng-container *ngFor="let image of images">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    {{image.title}}
+                </mat-panel-title>
+                <mat-panel-description>
+                    {{image.date}}
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>
+                {{image.explanation}}
+            </p>
+            <img mat-card-image [src]="image.url" alt="image.title">
+        </mat-expansion-panel>
+    </ng-container>
+</mat-accordion>
