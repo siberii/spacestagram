@@ -1,31 +1,12 @@
 # Spacestagram
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
+- [Spacestagram Website](https://shopify-challenge-winter-2022.netlify.app/)
+- [Spacestagram Instructions](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ)
 
-[Spacestagram Website](https://shopify-challenge-winter-2022.netlify.app/)
-
-[Spacestagram Instruction](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ)
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Features
+The user may:
+- Search pictures from NASA's Astronomy Photo of the Day (10 results)
+- Like and unlike pictures
+- Save likes to local storage if the user leaves or reloads the page
+- Create shareable links for each image
+- Have a loading state while waiting for NASA’s API to return data
