@@ -1,0 +1,8 @@
+<p>{{image | json}}</p>
+<input 
+    #isLikedCheckbox
+    type="checkbox"
+    [checked]="isLiked"
+    (change)="like(isLikedCheckbox.checked)"
+ >
+<hr />
